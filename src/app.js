@@ -3,8 +3,8 @@ const express=require("express")
 const app= express()
 const hbs=require('hbs')
 
-const forcast= require('../utils/forcast.js')
-const geocode= require('../utils/geocode.js')
+const forcast= require('./utils/forcast.js')
+const geocode= require('./utils/geocode.js')
 
 // const port = process.env.PORT || 3000
 
