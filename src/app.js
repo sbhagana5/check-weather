@@ -6,7 +6,7 @@ const hbs=require('hbs')
 const forcast= require('./utils/forcast.js')
 const geocode= require('./utils/geocode.js')
 
-// const port = process.env.PORT || 3000
+const port = process.env.PORT || 3000
 
 
 const publicDirectory=path.join(__dirname,'../public')
@@ -83,6 +83,6 @@ app.get('*',(req,res)=>{
         err:"404 page not found..."
     })
 })
-app.listen(process.env.PORT || 3000,()=>{
-    console.log("port number is "+ process.env.PORT || 3000);
+app.listen(port,()=>{
+    console.log("port number is "+ port);
 })
